@@ -1,0 +1,31 @@
+@mixin M {
+    @media screen and (min-width: 800px){
+        @content;
+    }
+}
+
+@include M {
+    .grid {
+        > .md-col-12 {
+            width: 100%;
+        }
+        > .md-col-8 {
+            width: 66.64%;
+        }
+        > .md-col-6 {
+            width: 50%;
+        }
+        > .md-col-4 {
+            width: 33.33%;
+        } 
+        > .md-col-3 {
+            width: 25%;
+        }
+        > .md-col-2 {    
+            width: 16.66%;
+        }
+        > .md-col-1 {
+            width: 8.33%;
+        }
+    }
+}

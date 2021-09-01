@@ -1,0 +1,31 @@
+@mixin L {
+    @media screen and (min-width: 1100px){
+        @content;
+    }
+}
+
+@include L {
+    .grid {
+        > .lg-col-12 {
+            width: 100%;
+        }
+        > .lg-col-8 {
+            width: 66.64%;
+        }
+        > .lg-col-6 {
+            width: 50%;
+        }
+        > .lg-col-4 {
+            width: 33.33%;
+        } 
+        > .lg-col-3 {
+            width: 25%;
+        }
+        > .lg-col-2 {    
+            width: 16.66%;
+        }
+        > .lg-col-1 {
+            width: 8.33%;
+        }
+    }
+}

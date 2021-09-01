@@ -1,0 +1,20 @@
+@import 'small';
+@import 'medium';
+@import 'large';
+
+$gridBG: coral;
+
+.grid {
+    > div {
+        float:left;
+        min-height: 1px;
+        background-color: $gridBG;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+
+
+
+
